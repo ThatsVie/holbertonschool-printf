@@ -18,6 +18,9 @@ int _printf(const char *format, ...)
 	int num;
 	char ch;
 	const char *str;
+	int temp;
+	int digits;
+	int divisor = 
 
 
 	while (*format)
@@ -58,8 +61,8 @@ int _printf(const char *format, ...)
 					num = -num;
 				}
 
-				int temp = num;
-				int digits = 0;
+				temp = num;
+				digits = 0;
 				do
 				{
 				temp /= 10;
@@ -68,22 +71,21 @@ int _printf(const char *format, ...)
 				while (temp);
 
 				temp = num;
-				int dividor = 1;
-				while (digits > 0)
-				{
-					
-					for (int i = 1; i < digits; i++)
-					{
+				divisor = 1;
+				for (temp = digits - 1; temp > 0; temp--)
 					divisor *= 10;
-					}
-					int digit = temp / divisor;
-					temp %= divisor;
-					putchar('0' + digit);
-					char_count++;
-					digits--;
-					divisor = 1;
-				}
 			}
+			while (digits > 0)
+			{
+				digit = num / divisor;
+				num %= divisor;
+				putchar('0' + digit);
+				char_count++;
+				digits--;
+				divisor = 1;
+			}
+
+
 			else if (*format == '%')
 			{
 				putchar ('%');
