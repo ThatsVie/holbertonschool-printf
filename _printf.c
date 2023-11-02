@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 	const char *str;
 	int temp;
 	int digits;
-	int divisor = 
+	int divisor;
 
 
 	while (*format)
@@ -77,7 +77,7 @@ int _printf(const char *format, ...)
 			}
 			while (digits > 0)
 			{
-				digit = num / divisor;
+				digits = num / divisor;
 				num %= divisor;
 				putchar('0' + digit);
 				char_count++;
