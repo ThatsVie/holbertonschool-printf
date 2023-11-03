@@ -12,13 +12,7 @@ void format_string(int *char_count, va_list args)
 	const char *str = va_arg(args, const char *);
 	if (str == NULL)
 	{
-		const char *null_str = "(null)";
-		while (*null_str)
-		{
-			putchar(*null_str);
-			(*char_count)++;
-			null_str++;
-		}
+		return;
 	}
 	else
 	{
@@ -32,9 +26,9 @@ void format_string(int *char_count, va_list args)
 }
 void format_int(int *char_count, va_list args)
 {
-	print_int(char_count, va_arg(args, int));
+	int num = va_arg(args, int);
+	print_int(char_count,num);
 }
-
 void format_percent(int *char_count)
 {
 	putchar ('%');
