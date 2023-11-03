@@ -11,19 +11,19 @@
 
 int _printf(const char *format, ...)
 {
-	int char_count = 0
+	int char_count = 0;
 	va_list args;
 	va_start(args, format);
 
 	
-	int num;
 	char ch;
 	const char *str;
+	int num;
 	int temp;
 	int digits;
 	int divisor;
-
-
+	int i;
+	int digit;
 	while (*format)
 	{
 		if (*format != '%')
@@ -43,8 +43,8 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 's')
 			{
-			str = va_arg(args, const char *);
-			while (*str)
+				str = va_arg(args, const char *);
+				while (*str)
 				{
 					putchar(*str);
 					char_count++;
@@ -73,35 +73,35 @@ int _printf(const char *format, ...)
 
 				temp = num;
 				divisor = 1;
-				for (temp = digits - 1; temp > 0; temp--)
+				for (i = digits - 1; i > 0; i--)
+				{
 					divisor *= 10;
-			}
-			while (digits > 0)
-			{
-				digits = num / divisor;
+				}
+			
+				while (digits > 0)
+				{
+				digit = num / divisor;
 				num %= divisor;
-				putchar('0' + digits);
+				putchar('0' + digit);
 				char_count++;
 				digits--;
 				divisor = 1;
+				}
 			}
-
-
 			else if (*format == '%')
 			{
-				putchar ('%');
-				char_count++;
+				putchar('%');
+				char_counr++;
 			}
 			else
 			{
-				putchar('%');
+				purchar('%');
 				putchar(*format);
 				char_count += 2;
 			}
 		}
-		format++;
+		format++l
 	}
-
 	va_end(args);
 	return (char_count);
 }
