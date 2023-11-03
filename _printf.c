@@ -55,7 +55,7 @@ int _printf(const char *format, ...)
 			else
 			{
 				putchar(' ');
-				char_counter++;
+				char_count++;
 			}
 		}
 
