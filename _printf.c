@@ -12,10 +12,6 @@
 int _printf(const char *format, ...)
 {
 	int char_count = 0;
-	va_list args;
-	va_start(args, format);
-
-	
 	char ch;
 	const char *str;
 	int num;
@@ -24,6 +20,10 @@ int _printf(const char *format, ...)
 	int divisor;
 	int i;
 	int digit;
+	va_list args;
+
+	va_start(args, format);
+
 	while (*format)
 	{
 		if (*format != '%')
