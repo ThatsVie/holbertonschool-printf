@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 void print_int(int *char_count, int num)
 {
