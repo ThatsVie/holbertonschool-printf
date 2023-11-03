@@ -56,7 +56,7 @@ int _printf(const char *format, ...)
 			{
 				putchar('%');
 				putchar(*format);
-				putchar('\n')
+				putchar('\n');
 				char_count++;
 				format++;
 			}
