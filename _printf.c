@@ -54,12 +54,14 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
+				putchar('%');
 				putchar(*format);
-				char_count++;
+				char_count += 2;
 				format++;
 			}
 		}
-
+		
+		format++;
 	}
 	va_end(args);
 
