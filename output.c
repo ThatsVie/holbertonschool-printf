@@ -20,7 +20,6 @@ void print_int(int *char_count, int num)
 	}
 	while (temp);
 
-	temp = num;
 	divisor = 1;
 	digit = 0;
 	for (i = digits - 1; i > 0; i--)
@@ -30,7 +29,7 @@ void print_int(int *char_count, int num)
 
 	while (digits > 0)
 	{
-		digits = num / divisor;
+		digit = num / divisor;
 		num %= divisor;
 		putchar('0' + digit);
 		(*char_count)++;
