@@ -47,7 +47,7 @@ void handle_format(int *char_count, const char **format, va_list args)
 	if (**format == 'c') format_char(char_count, args);
 	else if (**format == 's') format_string(char_count,args);
 	else if (**format == 'd' || **format == 'i') format_int(char_count,args);
-	else if (**format == '%') format_percent(char_count);
+	else if (**format == '%')
 	{
 		putchar ('%');
 		(*char_count)++;
