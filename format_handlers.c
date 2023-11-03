@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "printf.h"
+#include "main.h"
 
 void format_char(int *char_count, va_list args)
 {
