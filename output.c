@@ -4,7 +4,7 @@
 void print_int(int *char_count, int num)
 {
 	int temp, digits, divisor, i, digit;
-	
+
 	if (num < 0)
 	{
 		putchar ('-');
@@ -14,8 +14,7 @@ void print_int(int *char_count, int num)
 
 	temp = num;
 	digits = 0;
-	do
-	{
+	do{
 		temp /= 10;
 		digits++;
 	}
@@ -27,7 +26,6 @@ void print_int(int *char_count, int num)
 	{
 		divisor *= 10;
 	}
-
 	while (digits > 0)
 	{
 		digit = num / divisor;
