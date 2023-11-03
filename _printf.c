@@ -15,17 +15,17 @@ int _printf(const char *format, ...)
 	va_list args;
 	va_start(args, format);
 
-	while (*format != '\0')
+	while (*format)
 	{
-		if (*format == '%')
+		if (*format != '%')
+		{
+			putchar(*format);
+			char_count++;
+		}
+		else
 		{
 			format++;
 
-			if (*format == '%')
-			{
-				putchar('%');
-				char_count++;
-			}
 			if (*format == 'c')
 			{
 				int c = va_arg(args, int);
@@ -35,26 +35,20 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 's')
 			{
-				const char *s = va_arg(args, const char *);
+				const char *str = va_arg(args, const char *);
 
-				while (*s != '\0')
+				while (*str)
 				{
-					putchar(*s);
-					s++;
+					putchar(*str);
 					char_count++;
+					str++;
 				}
 			}
-			else
+			else if (*format == '%')
 			{
-				putchar('%');
-				putchar(*format);
-				char_count += 2;
+				putchar('%')
+				char_count++;
 			}
-		}
-		else
-		{
-			putchar(*format);
-			char_count++;
 		}
 
 		format++;
