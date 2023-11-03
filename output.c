@@ -14,10 +14,11 @@ void print_int(int *char_count, int num)
 
 	temp = num;
 	digits = 0;
-	do{
+	do {
 		temp /= 10;
 		digits++;
 	}
+
 	while (temp);
 
 	divisor = 1;
