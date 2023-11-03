@@ -48,8 +48,14 @@ void handle_format(int *char_count, const char **format, va_list args)
 	else if (**format == 's') format_string(char_count,args);
 	else if (**format == 'd' || **format == 'i') format_int(char_count,args);
 	else if (**format == '%') format_percent(char_count);
+	{
+		putchar ('%');
+		(*char_count)++;
+	}
 	else
 	{
-		putchar('%'), putchar(**format), *char_count += 2;
+		putchar('%');
+		putchar(**format);
+		*char_count += 2;
 	}
 }
