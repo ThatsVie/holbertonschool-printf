@@ -1,7 +1,7 @@
 #include "main.h"                                                                                  
 #include <stdio.h>                                                                                 
 #include <stdarg.h>                                                                                
-#include "format_handlers.h"                                                                                                   
+#include "format_handlers.c"                                                                                                   
 int _print(const char *format, ...)                                                                
 {                                                                                                  
         int char_count = 0;                                                                        
