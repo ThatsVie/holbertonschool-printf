@@ -12,7 +12,13 @@ void format_string(int *char_count, va_list args)
 	const char *str = va_arg(args, const char *);
 	if (str == NULL)
 	{
-		return;
+		const char *null_str = "(null)";
+		while (*null_str)
+		{
+			putchar(*null_str);
+			(*char_count)++;
+			null_str++;
+		}
 	}
 	else
 	{
