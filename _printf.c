@@ -54,9 +54,9 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				putchar('%');
+				putchar('%''\n');
 				putchar(*format);
-				char_count += 2;
+				char_count++;
 				format++;
 			}
 		}
