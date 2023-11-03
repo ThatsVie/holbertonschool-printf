@@ -22,6 +22,7 @@ void print_int(int *char_count, int num)
 
 	temp = num;
 	divisor = 1;
+	digit = 0;
 	for (i = digits - 1; i > 0; i--)
 	{
 		divisor *= 10;
