@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			handle_format(&char_count, &format, args)
+			handle_format(&char_count, &format, args);
 		}
 		format++;
 	}
