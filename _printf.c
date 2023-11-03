@@ -22,4 +22,5 @@ int _print(const char *format, ...)
                 format++;                                                                          
         }                                                                                          
         va_end(args);                                                                              
-        return (char_count;                                                                        
+        return (char_count);
+}	
