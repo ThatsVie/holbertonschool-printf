@@ -63,24 +63,3 @@ int _printf(const char *format, ...)
 
 	return (char_count);
 }
-
-int print_number(int num)
-{
-	int char_count = 0;
-	
-	if (num < 0)
-	{
-		putchar('-');
-		char_count++;
-		num = -num;
-	}
-	if (num / 10)
-	{
-		char_count += print_number(num / 10);
-	}
-
-	putchar('0' + num % 10);
-	char_count++;
-
-	return (char_count);
-}
