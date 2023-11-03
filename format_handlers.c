@@ -10,12 +10,26 @@ void format_char(int *char_count, va_list args)
 void format_string(int *char_count, va_list args)
 {
 	const char *str = va_arg(args, const char *);
-	while (*str)
+	if (str == NULL)
 	{
-		putchar(*str), (*char_count)++, str++;
+		const char *null_str = "(null)";
+		while (*null_str)
+		{
+			putchar(*null_str);
+			(*char_count)++;
+			null_str++;
+		}
+	}
+	else
+	{
+		while (*str)
+		{
+			putchar(*str);
+			(*char_count)++;
+			str++;
+		}
 	}
 }
-
 void format_int(int *char_count, va_list args)
 {
 	print_int(char_count, va_arg(args, int));
