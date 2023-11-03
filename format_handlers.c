@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "maiin.h"
 
 void format_char(int *char_count, va_list args)
 {
@@ -11,7 +11,9 @@ void format_string(int *char_count, va_list args)
 {
 	const char *str = va_arg(args, const char *);
 	while (*str)
+	{
 		putchar(*str), (*char_count)++, str++;
+	}
 }
 
 void format_int(int *char_count, va_list args)
