@@ -1,6 +1,8 @@
 #ifndef _HEADER_
 #define _HEADER_
 
+#include <stdarg.h>
+
 int _printf(const char *format, ...);
 void format_char(int *char_count, va_list args);
 void format_string(int *char_count, va_list args);
