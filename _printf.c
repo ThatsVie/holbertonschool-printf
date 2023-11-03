@@ -1,7 +1,6 @@
 #include "main.h"                                                                                  
 #include <stdio.h>                                                                                 
-#include <stdarg.h>                                                                                
-#include "format_handlers.c"                                                                                                   
+#include <stdarg.h>                                                                                                                                                                                
 int _printf(const char *format, ...)                                                                
 {                                                                                                  
         int char_count = 0;                                                                        
