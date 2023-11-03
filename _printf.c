@@ -2,7 +2,12 @@
 #include <stdio.h>                                                                                 
 #include <stdarg.h>                                                                                                                                                                                
 int _printf(const char *format, ...)                                                                
-{                                                                                                  
+{
+	if (format == NULL)
+	{
+		return (0);
+	}
+
         int char_count = 0;                                                                        
         va_list args;                                                                              
         va_start(args, format);                                                                    
