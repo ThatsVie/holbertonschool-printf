@@ -91,16 +91,16 @@ int _printf(const char *format, ...)
 			else if (*format == '%')
 			{
 				putchar('%');
-				char_counr++;
+				char_count++;
 			}
 			else
 			{
-				purchar('%');
+				putchar('%');
 				putchar(*format);
 				char_count += 2;
 			}
 		}
-		format++l
+		format++;
 	}
 	va_end(args);
 	return (char_count);
