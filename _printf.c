@@ -54,8 +54,9 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				putchar('%''\n');
+				putchar('%');
 				putchar(*format);
+				putchar('\n')
 				char_count++;
 				format++;
 			}
