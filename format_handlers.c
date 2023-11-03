@@ -13,23 +13,14 @@ void format_string(int *char_count, va_list args)
 
 	if (str == NULL)
 	{
-		const char *null_str = "(null)";
-
-		while (*null_str)
-		{
-			putchar(*null_str);
-			(*char_count)++;
-			null_str++;
-		}
+		str = "(null)";
 	}
-	else
+
+	while (*str)
 	{
-		while (*str)
-		{
-			putchar(*str);
-			(*char_count)++;
-			str++;
-		}
+		putchar(*str);
+		(*char_count)++;
+		str++;
 	}
 }
 void format_int(int *char_count, va_list args)
