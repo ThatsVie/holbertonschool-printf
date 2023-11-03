@@ -2,7 +2,7 @@
 #include <stdio.h>                                                                                 
 #include <stdarg.h>                                                                                
 #include "format_handlers.c"                                                                                                   
-int _print(const char *format, ...)                                                                
+int _printf(const char *format, ...)                                                                
 {                                                                                                  
         int char_count = 0;                                                                        
         va_list args;                                                                              
