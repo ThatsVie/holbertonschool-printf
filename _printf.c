@@ -11,10 +11,11 @@
 
 int _printf(const char *format, ...)
 {
+	int char_count = 0
 	va_list args;
 	va_start(args, format);
 
-	int char_count = 0;
+	
 	int num;
 	char ch;
 	const char *str;
@@ -79,7 +80,7 @@ int _printf(const char *format, ...)
 			{
 				digits = num / divisor;
 				num %= divisor;
-				putchar('0' + digit);
+				putchar('0' + digits);
 				char_count++;
 				digits--;
 				divisor = 1;
