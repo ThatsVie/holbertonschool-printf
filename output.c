@@ -11,6 +11,8 @@ void print_int(int *char_count, int num)
 {
 	char int_str[12];
 	int i = 0;
+	int j;
+	char reversed;
 
 	if (num < 0)
 	{
@@ -31,8 +33,7 @@ void print_int(int *char_count, int num)
 		}
 	}
 
-	char reversed[12];
-	int j;
+	reversed[12];
 	for (j = 0; i > 0; j++, i--)
 	{
 		reversed[j] = int_str[i - 1];
