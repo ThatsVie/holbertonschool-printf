@@ -15,20 +15,16 @@ Our printf fuction works through four distinct files, each code file works in ta
 
 
 ### _printf
-- 
-- 
+- The _printf function is a variadic function that takes a format string as its first argument, followed by a variable number of additional arguments.
 
 ### format_handlers.c
--
--
+- This code uses mulitple functions to handle the appropriate formatting function based on the encountered format specifier and updating the char_count accordingly.
 
 ### main.h
--
--
+- This file is the header file that contains our prototypes called.
 
 ### output.c
--
--
+- This code file allows the _printf function to format and print integers correctly
 
 
 ### Yay!
