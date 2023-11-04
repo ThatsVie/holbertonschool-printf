@@ -21,27 +21,24 @@ void print_int(int *char_count, int num)
 		num = -num;
 	}
 
-	if (num == 0)
-	{
-		putchar('0');
-		(*char_count)++;
+	do {
+		temp /= 10;
+		digits++;
 	}
-	else
-	{
-		while (temp > 0)
-		{
-			temp /= 10;
-			divisor *= 10;
-			digits++;
-		}
 
-		while (divisor > 1)
-		{
-			divisor /= 10;
-			current_digit = num/ divisor;
-			putchar('0' + current_digit);
-			(*char_count)++;
-			num %= divisor;
-		}
+	while (temp);
+
+	for (i = digits - 1; i >= 0; i--)
+	{
+		divisor *= 10;
+	}
+	while (digits > 0)
+	{
+		current_digit = num / divisor;
+		num %= divisor;
+		putchar(current_digit);
+		(*char_count)++;
+		digits--;
+		divisor = 1;
 	}
 }
