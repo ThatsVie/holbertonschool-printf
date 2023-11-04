@@ -59,7 +59,6 @@ void format_int(int *char_count, va_list args)
 void format_percent(int *char_count)
 {
 	putchar ('%');
-	(*char_count)++;
 }
 /**
  * handle_format - handles different format specifiers
