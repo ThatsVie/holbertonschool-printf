@@ -9,7 +9,11 @@
  */
 void print_int(int *char_count, int num)
 {
-	int temp, digits, divisor, i, digit;
+	int digit = 0;
+	int temp = num;
+	int divisor;
+	int current_digit;
+	int i;
 
 	if (num < 0)
 	{
@@ -18,28 +22,30 @@ void print_int(int *char_count, int num)
 		num = -num;
 	}
 
-	temp = num;
-	digits = 0;
-	do {
+	if (num == 0)
+	{
+		putchar('0');
+		(*char_count)++;
+	}
+
+	while (temp > 0)
+	{
 		temp /= 10;
 		digits++;
 	}
 
-	while (temp);
-
-	divisor = 1;
-	digit = 0;
-	for (i = digits - 1; i >= 0; i--)
-	{
-		divisor *= 10;
-	}
 	while (digits > 0)
 	{
-		digit = num / divisor;
-		num %= divisor;
-		putchar('0' + digit);
-		(*char_count)++;
-		digits--;
 		divisor = 1;
+		for (i = 1; i < digits; i++)
+		{
+			divisor *= 10;
+		}
+
+		current_digit = num / divisor;
+		putchar('0' + current_digit);
+		(*char_count)+++;
+		num %= divisor;
+		digits--;
 	}
 }
