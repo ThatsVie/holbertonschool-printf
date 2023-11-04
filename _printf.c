@@ -5,6 +5,9 @@
  * _printf - takes a variable number of arguments
  *
  * @format: pointer to a format string
+ *
+ * Return: value of char_count (numbers of characters
+ * printed)
  */
 
 int _printf(const char *format, ...)
