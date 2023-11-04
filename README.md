@@ -1,6 +1,6 @@
 
 # **Printf function**
-## ✨by Vie and Jackie ✨
+## ✨by [Vie](https://github.com/ThatsVie) and [Jackie](https://github.com/Srixx24) ✨
 
 Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
 
