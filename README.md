@@ -14,7 +14,7 @@ Our printf fuction works through four distinct files, each code file works in ta
 
 
 
-### _printf
+### [_printf](https://github.com/ThatsVie/holbertonschool-printf/blob/main/_printf.c)
 - The _printf function is a variadic function that takes a format string as its first argument, followed by a variable number of additional arguments.
 
 ### format_handlers.c
@@ -23,7 +23,7 @@ Our printf fuction works through four distinct files, each code file works in ta
 ### main.h
 - This file is the header file that contains our prototypes called.
 
-### output.c
+### [output.c](https://github.com/ThatsVie/holbertonschool-printf/blob/main/output.c)
 - This code file allows the _printf function to format and print integers correctly
 
 
