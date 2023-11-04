@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * print_int - formats and prints and integer
@@ -9,11 +10,40 @@
  */
 int print_int (va_list values)
 {
-	int num = va_arg(values, int);
-	int count = 0;
-	char buffer[12];
+	int divisor = 1;
+	int digits = 0;
+	int temp = num;
+	int current_digit;
+	int i;
+	char buffer[20];
 
-	count += sprintf(buffer, "%d", num);
-	write(1, buffer, count);
-	return (count);
+	if (num < 0)
+	{
+		putchar('-');
+		(*char_count)++;
+		num = -num;
+	}
+	
+	do
+	{
+		temp /= 10;
+		digits++;
+	}
+	while (temp);
+
+	for (i = digits -1; i >= 0; i--)
+	{
+		divisor *= 10;
+	}
+	while (digits > 0)
+	{
+		current_digit = num / divisor;
+		num %= divisor;
+		buffer[digits - 1] = current_digit + '0';
+		(*char_count)++;
+		digits--;
+		divisor = 1;
+	}
+	buffer[i] = '\0';
+	write(1, buffer, i);
 }
