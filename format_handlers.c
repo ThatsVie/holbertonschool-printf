@@ -53,7 +53,7 @@ void format_int(int *char_count, va_list args)
 /**
  * print_percent - handles '%'and double %
  *
- * @char_count: pointer to integer that keeps track of 
+ * @char_count: pointer to integer that keeps track of
  * number of characters printed
  */
 

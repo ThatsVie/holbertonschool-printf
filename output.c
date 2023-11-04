@@ -11,7 +11,7 @@ void print_int(int *char_count, int num)
 {
 	int divisor = 1;
 	int digits = 0;
-	int temp =num;
+	int temp = num;
 	int current_digit;
 	int i;
 
