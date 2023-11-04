@@ -9,37 +9,39 @@
  */
 void print_int(int *char_count, int num)
 {
-	int divisor = 1;
-	int digits = 0;
-	int temp = num;
-	int current_digit;
-	int i;
+	char int_str[12];
+	int i = 0;
 
 	if (num < 0)
 	{
-		putchar('-');
-		(*char_count)++;
+		int_str[i++] = '_';
 		num = -num;
 	}
 
-	do {
-		temp /= 10;
-		digits++;
+	if (num == 0)
+	{
+		int_str[i++] = '0';
+	}
+	else
+	{
+		while (num > 0)
+		{
+			int_str[i++] = (char)('0' + (num % 10));
+			num /= 10;
+		}
 	}
 
-	while (temp);
-
-	for (i = digits - 1; i >= 0; i--)
+	char reversed[12];
+	int j;
+	for (j = 0; i > 0; j++, i--)
 	{
-		divisor *= 10;
+		reversed[j] = int_str[i - 1];
 	}
-	while (digits > 0)
+	reversed[j] = '\0';
+
+	for (i = 0; reversed[i] != '\0'; i++)
 	{
-		current_digit = num / divisor;
-		num %= divisor;
-		putchar(current_digit);
+		putchar(reversed[i]);
 		(*char_count)++;
-		digits--;
-		divisor = 1;
 	}
 }
