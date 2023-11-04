@@ -9,7 +9,7 @@
  */
 void print_int(int *char_count, int num)
 {
-	int digit = 0;
+	int digits = 0;
 	int temp = num;
 	int divisor;
 	int current_digit;
@@ -44,7 +44,7 @@ void print_int(int *char_count, int num)
 
 		current_digit = num / divisor;
 		putchar('0' + current_digit);
-		(*char_count)+++;
+		(*char_count)++;
 		num %= divisor;
 		digits--;
 	}
