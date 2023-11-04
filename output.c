@@ -13,6 +13,7 @@ void print_int(int *char_count, int num)
 	int digits = 0;
 	int temp =num;
 	int current_digit;
+	int i;
 
 	if (num < 0)
 	{
