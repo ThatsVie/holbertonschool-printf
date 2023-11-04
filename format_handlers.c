@@ -61,7 +61,7 @@ int print_percent(int *char_count)
 {
 	putchar('%');
 	(*char_count)++;
-	return (1)
+	return (1);
 }
 
 /**
