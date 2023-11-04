@@ -58,7 +58,7 @@ int print_percent(void)
 	putchar('%');
 	return (1);
 }
-***
+/**
  * handle_format - handles different format specifiers
  * in a format string
  *
