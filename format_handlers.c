@@ -61,7 +61,7 @@ void format_int(int *char_count, va_list args)
 int print_percent(int *char_count, const char *format)
 {
 	int count = 0;
-	int i
+	int i;
 
 	while (*format == '%')
 	{
@@ -100,7 +100,7 @@ void handle_format(int *char_count, const char **format, va_list args)
 		format_int(char_count, args);
 	else if (**format == '%')
 	{
-		print_percent();
+		print_percent(char_count, format);
 	}
 	else
 	{
