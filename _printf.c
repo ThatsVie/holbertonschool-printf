@@ -31,6 +31,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
+			char_count += print_percent(&char_count, format);
 			handle_format(&char_count, &format, args);
 		}
 		format++;
