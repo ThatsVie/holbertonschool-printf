@@ -9,15 +9,14 @@
  */
 void print_int(int *char_count, int num)
 {
+	int divisor = 1;
 	int digits = 0;
-	int temp = num;
-	int divisor;
+	int temp =num;
 	int current_digit;
-	int i;
 
 	if (num < 0)
 	{
-		putchar ('-');
+		putchar('-');
 		(*char_count)++;
 		num = -num;
 	}
@@ -27,25 +26,22 @@ void print_int(int *char_count, int num)
 		putchar('0');
 		(*char_count)++;
 	}
-
-	while (temp > 0)
+	else
 	{
-		temp /= 10;
-		digits++;
-	}
-
-	while (digits > 0)
-	{
-		divisor = 1;
-		for (i = 1; i < digits; i++)
+		while (temp > 0)
 		{
+			temp /= 10;
 			divisor *= 10;
+			digits++;
 		}
 
-		current_digit = num / divisor;
-		putchar('0' + current_digit);
-		(*char_count)++;
-		num %= divisor;
-		digits--;
+		while (divisor > 1)
+		{
+			divisor /= 10;
+			current_digit = num/ divisor;
+			putchar('0' + current_digit);
+			(*char_count)++;
+			num %= divisor;
+		}
 	}
 }
