@@ -94,7 +94,7 @@ void handle_format(int *char_count, const char **format, va_list args)
 
 	if (**format == 'c')
 	{
-		putchar(va_args(args,int));
+		putchar(va_arg(args, int));
 		(*char_count)++;
 	}
 	else if (**format == 's')
