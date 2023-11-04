@@ -67,7 +67,7 @@ void format_percent(int *char_count)
  *
  * @char_count: a pointer to an integer that keeps track
  * of the number of characters printed
- * @char format: a pointer to a pointer to a format string
+ * @format: a pointer to a pointer to a format string
  * @args: allows the function to accept variable arguments
  */
 void handle_format(int *char_count, const char **format, va_list args)
