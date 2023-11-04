@@ -33,7 +33,7 @@ int print_int (va_list values)
 	}
 	while (temp);
 
-	for (i = digits - 1; i >=; i--)
+	for (i = digits - 1; i >= 0; i--)
 	{
 		current_digit = num / divisor;
 		buffer[char_count++] = current_digit + '0';
