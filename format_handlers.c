@@ -57,7 +57,7 @@ void format_int(int *char_count, va_list args)
  * number of characters printed
  */
 
-void print_percent(int *char_count)
+int print_percent(int *char_count)
 {
 	putchar('%');
 	(*char_count)++;
