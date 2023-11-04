@@ -79,7 +79,7 @@ void handle_format(int *char_count, const char **format, va_list args)
 		format_int(char_count, args);
 	else if (**format == '%')
 	{
-		print_percent(void);
+		print_percent();
 	}
 	else
 	{
