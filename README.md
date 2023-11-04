@@ -1,7 +1,8 @@
 
-# Printf function
+# **Printf function**
 ## ✨by Vie and Jackie ✨
- 
+
+Our Repo [Printf Project](https://github.com/ThatsVie/holbertonschool-printf)
 
 Our printf fuction works through four distinct files, each code file works in tandum to produce output according to a format. Files are listed bellow:
 
@@ -10,10 +11,10 @@ Our printf fuction works through four distinct files, each code file works in ta
 - main.h
 - output.c
 
-(github link)
 
 
-## Functions of printf
+
+### Functions of printf
 
 - 
 - 
