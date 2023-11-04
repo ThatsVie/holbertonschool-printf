@@ -48,7 +48,7 @@ void format_int(int *char_count, va_list args)
 {
 	int num = va_arg(args, int);
 
-	print_int(char_count, num);
+	print_int(num);
 }
 /**
  * print_percent - handles '%'and double %
