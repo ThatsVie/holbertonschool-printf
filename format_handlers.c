@@ -14,12 +14,11 @@ void format_char(int *char_count, va_list args)
 	(*char_count)++;
 }
 /**
- * format_string - formats and prints a string 
+ * format_string - formats and prints a string
  *
  * @char_count: a pointer to an integer that keeps
  * track of the number of characters printed
- * @arg: a variable argument list that allows the
- * function to accept variable arguments
+ * @args: allows the function to accept variable arguments
  */
 void format_string(int *char_count, va_list args)
 {
@@ -68,9 +67,8 @@ void format_percent(int *char_count)
  *
  * @char_count: a pointer to an integer that keeps track
  * of the number of characters printed
- * @char **format: a pointer to a pointer to a format string
- * @arg: a variable argument list that allows the function to
- * accept variable arguments
+ * @char format: a pointer to a pointer to a format string
+ * @args: allows the function to accept variable arguments
  */
 void handle_format(int *char_count, const char **format, va_list args)
 {

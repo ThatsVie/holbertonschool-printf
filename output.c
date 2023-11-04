@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+ * print_int - formats and prints and integer
+ *
+ * @char_count: a pointer to an integer that
+ * keeps track of the number of characters printed
+ * @num: the integer value to be formatted and printed
+ */
 void print_int(int *char_count, int num)
 {
 	int temp, digits, divisor, i, digit;
