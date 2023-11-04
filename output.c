@@ -30,7 +30,7 @@ void print_int (int *char_count, int num)
 
 	while (temp);
 
-	for ( i = digits - 1; i >= 0; i--)
+	for (i = digits - 1; i >= 0; i--)
 	{
 		current_digit = num / divisor;
 		num %= divisor;
