@@ -5,7 +5,7 @@
 ✨by <a href="https://github.com/ThatsVie)/">Vie</a> and  <a href="https://github.com/Srixx24/">Jackie</a> ✨
 </p>
 
-Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
+## Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
 
 Our printf fuction works through four distinct files, each code file works in tandum to produce output according to a format. Files are listed bellow:
 
