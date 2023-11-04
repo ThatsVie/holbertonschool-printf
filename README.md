@@ -1,5 +1,6 @@
 
-# **Printf function**
+![Printf_Function (1)](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/052145cf-984d-43c1-ae87-55eb6a78e7b6)
+
 ## ✨by [Vie](https://github.com/ThatsVie) and [Jackie](https://github.com/Srixx24) ✨
 
 Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
