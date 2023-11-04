@@ -20,7 +20,7 @@ Our printf fuction works through four distinct files, each code file works in ta
 ### [format_handlers.c](https://github.com/ThatsVie/holbertonschool-printf/blob/main/format_handlers.c)
 - This code uses mulitple functions to handle the appropriate formatting function based on the encountered format specifier and updating the char_count accordingly.
 
-### main.h
+### [main.h](https://github.com/ThatsVie/holbertonschool-printf/blob/main/main.h)
 - This file is the header file that contains our prototypes called.
 
 ### [output.c](https://github.com/ThatsVie/holbertonschool-printf/blob/main/output.c)
