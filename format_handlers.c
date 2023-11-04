@@ -48,10 +48,10 @@ void format_int(int *char_count, va_list args)
 {
 	int num = va_arg(args, int);
 
-	print_int(num);
+	print_int(char_count, num);
 }
 /**
- * print_percent - handles '%'and double %
+ * print_percent - handles '%'
  *
  * @char_count: pointer to integer that keeps track of
  * number of characters printed

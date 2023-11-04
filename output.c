@@ -4,46 +4,38 @@
 /**
  * print_int - formats and prints and integer
  *
- * @values: va_list containing integer to be printed
- *
- * Return: number of characters written
+ * @char_count: pointerto integer that keeps track of
+ * number of characters printed
+ * @num: interger value to be formatted and printed
  */
-int print_int (va_list values)
+
+void print_int (int *char_count, int num)
 {
-	int num = va_arg(values, int);
 	int divisor = 1;
 	int digits = 0;
 	int temp = num;
 	int current_digit;
-	char buffer [20];
-	int char_count = 0;
-	int i;
 
 	if (num < 0)
 	{
-		buffer[char_count++] = '-';
+		putchar('-');
+		(*char_count)++;
 		num = -num;
 	}
-
-	do
-
-	{
+	do {
 		temp /= 10;
 		digits++;
 	}
+
 	while (temp);
 
-	for (i = digits - 1; i >= 0; i--)
+	for ( i = digits - 1; i >= 0; i--)
 	{
 		current_digit = num / divisor;
-		buffer[char_count++] = current_digit + '0';
 		num %= divisor;
-		divisor /= 10;
+		putchar(current_digit);
+		(*char_count)++;
+		digits--;
+		divisor = 1;
 	}
-
-	buffer[char_count] = '\0';
-
-	write(1, buffer, char_count);
-
-	return (char_count);
 }
