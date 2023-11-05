@@ -2,14 +2,15 @@
 /**
  * _printChar - print a single character
  * @args: va_list containing character to print
- * 
+ *
  * Return: number of characters printed
  */
 
 int _printChar(va_list args)
 {
 	char c = va_arg(args, int);
-	return (write(1,&c, 1));
+
+	return (write(1, &c, 1));
 }
 
 /**
@@ -22,6 +23,7 @@ int _printChar(va_list args)
 int _printString(va_list args)
 {
 	char *s = va_arg(args, char *);
+
 	if (s == NULL)
 		s = "(null)";
 	return (write(1, s, strlen(s)));
