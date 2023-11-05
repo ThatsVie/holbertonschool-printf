@@ -30,8 +30,15 @@ int _printf(const char *format, ...)
 			putchar(*format);
 			char_count++;
 		}
-		else
+		if (*format == '%')
 		{
+			format++;
+			
+			if (*format == '\0')
+			{
+				break;
+			}
+
 			handle_format(&char_count, &format, args);
 		}
 		format++;
