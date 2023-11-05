@@ -55,26 +55,5 @@ int _printf(const char *format, ...)
 	return (count);
 }
 
-/**
- * find_specifier - find the index of the specifier in the
- * specifiers array
- * @format: format string with the % followed by
- * specifier character
- *
- * Return: index of the specifier in the specifiers array,
- * or -1 if not found
- */
 
-int find_specifier(const char *format)
-{
-	int i;
 
-	for (i = 0; specifiers[i].specifier != NULL; i++)
-	{
-		if (*specifiers[i].specifier  == *format)
-		{
-			return (i);
-		}
-	}
-	return (-1);
-}
