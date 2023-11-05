@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 	};
 	va_list values;
 	int count = 0;
-	int specifier_index
+	int specifier_index;
 
 	if (!format)
 		return (-1);
@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			formatt++;
+			format++;
 			specifier_index = find_specifier(format);
 			if (specifier_index >= 0)
 			{
