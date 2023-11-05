@@ -73,6 +73,7 @@ int _printInt(va_list args)
 
 	{
 		char temp = buffer[j];
+
 		buffer[j] = buffer[i - j - 1];
 		buffer[i - j - 1] = temp;
 
