@@ -29,7 +29,7 @@ char *itoa(int num, char *str, int base)
 		str[i++] = (rem > 9) ? (rem - 10) + 'a' : rem + '0';
 		num /= base;
 	}
-	if (isNegative && base = 10)
+	if (isNegative && base == 10)
 		str[i++] = '-';
 	str[i] = '\0';
 	for (start = 0, end = i -1; start < end; start++, end--)
