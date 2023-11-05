@@ -39,7 +39,7 @@ void print_int (int *char_count, int num)
 		current_digit = num / divisor;
 		num %= divisor;
 		putchar('0' + current_digit);
-		(*char_count)++;			  
+		(*char_count)++;
 		digits--;
 		divisor = 1;
 	}

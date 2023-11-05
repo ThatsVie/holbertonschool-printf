@@ -82,10 +82,6 @@ void handle_format(int *char_count, const char **format, va_list args)
 		format_string(char_count, args);
 	else if (**format == 'd' || **format == 'i')
 		format_int(char_count, args);
-	else if (**format == '%')
-	{
-		print_percent(char_count);
-	}
 	else
 	{
 		putchar('%');
