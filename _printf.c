@@ -4,15 +4,12 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-int handleIntegerSpecifier(va_list *args);
-
 /**
  * _printf - function that produces output
  * @format: format string
  *
  * Return: number of characters printed, or -1 for error
  */
-
 int _printf(const char *format, ...)
 {
 	PrintFunction specifiers[] = {
@@ -37,65 +34,21 @@ int _printf(const char *format, ...)
 			count += _putchar(format[a]);
 		else
 		{
-			if (format[a + 1] == 'd' || format[a + 1] == 'i')
-				count += handleIntegerSpecifier(&args);
-			else
+			for (b = 0; b < 5; b++)
 			{
-				for (b = 0; b < 5; b++)
+				if (*specifiers[b].specifier == format[a + 1])
 				{
-					if (*specifiers[b].specifier == format[a + 1])
-					{
-						format++;
-						count += specifiers[b].function(args);
-						break;
-					}
+					format++;
+					count += specifiers[b].function(args);
+					break;
 				}
-				if (b == 5 && format[a + 1] == '\0')
-					return (-1);
-				else if (b == 5 && format[a + 1] != '\0')
-					count += _putchar(format[a]);
 			}
+			if (b == 5 && format[a + 1] == '\0')
+				return (-1);
+			else if (b == 5 && format[a + 1] != '\0')
+				count += _putchar(format[a]);
 		}
 	}
 	va_end(args);
 	return (count);
 }
-
-int handleIntegerSpecifier(va_list *args)
-{
-	int value = va_arg(*args, int);
-	int isneg = 0;
-	int numdig = 0;
-	int temp, i;
-	char buffer[12];
-
-	if (value < 0)
-	{
-		isneg = 1;
-		value = -value;
-	}
-	if (value == 0)
-		return _putchar('0');
-
-	temp = value;
-
-	while (temp != 0)
-	{
-		temp /= 10;
-		numdig++;
-	}
-
-	buffer[numdig + isneg] = '\0';
-
-	if (isneg)
-		buffer[0] = '-';
-
-	for (i = numdig + isneg - 1; i >= isneg; i--)
-	{
-		buffer[i] = (value % 10) + '0';
-		value /= 10;
-	}
-
-	return write(1, buffer, numdig + isneg);
-}
-
