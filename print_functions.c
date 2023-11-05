@@ -40,7 +40,7 @@ int _printInt(va_list args)
 	int num = va_arg(args, int);
 	int count;
 
-	count = itoa(buffer, num);
+	count = itoa(num, str, base);
 	return (write(1, buffer, count));
 }
 
