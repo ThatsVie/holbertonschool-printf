@@ -1,13 +1,26 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdarg.h>
+#include <unistd.h>
 
-int _printf(const char *format, ...);
-void format_char(int *char_count, va_list args);
-void format_string(int *char_count, va_list args);
-void format_int(int *char_count, va_list args);
-void print_percent(int *char_count);
-void handle_format(int *char_count, const char **format, va_list args);
-void print_int(int *char_count, int num);
+/**
+ * struct PrintFunction - structure to store format specifer
+ * and associated function
+ * @specifier: format specifier
+ * @function: a pointer to the corresponding printing function
+ */
+
+typedef struct
+{
+	char *specifier;
+	int(*function)(va_list);
+} PrintFunction;
+
+int _printf(const char *format,...);
+int _printChar(va_list args);
+int _printString(va_list args);
+int _printInt(va_list args);
+int _printPercent(va_list args);
+
 #endif
