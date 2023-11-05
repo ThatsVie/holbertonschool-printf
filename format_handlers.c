@@ -80,7 +80,6 @@ void handle_format(int *char_count, const char **format, va_list args)
 	{
 		putchar('%');
 		(*char_count)++;
-		(*format)++;
 	}
 	else if (**format == 'c')
 		format_char(char_count, args);
@@ -92,6 +91,6 @@ void handle_format(int *char_count, const char **format, va_list args)
 	{
 		putchar('%');
 		putchar(**format);
-		(*char_count) += 2;
+		(*char_count)++;
 	}
 }
