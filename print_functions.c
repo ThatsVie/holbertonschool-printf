@@ -39,14 +39,15 @@ int _printString(va_list args)
 int _printInt(va_list args)
 {
 	char buffer[20];
-	long long int num;
+	long int num;
 	int base = 10;
 	int isneg = 0;
 	int len;
+	int i = 0;
 
-	if (sizeof(int) == sizeof(long long int))
+	if (sizeof(int) == sizeof(long int))
 	{
-		num = va_arg(args, long long int);
+		num = va_arg(args, long int);
 	}
 	else
 	{
@@ -59,15 +60,28 @@ int _printInt(va_list args)
 		num = -num;
 	}
 
-	lltoa(num, buffer, base);
+	do 
+	{
+		buffer[i++] = num % 10 + '0';
+		num /= 10;
+	}
+	while (num > 0)
 
 	len = strlen(buffer);
 
 	if (isneg)
 	{
-		_putchar('-');
-		len++;
+		buffer[i++] = '=';
 	}
+
+	len = i;
+	for (int j = 0; j < i / 2; j++)
+	{
+		char temp = buffer[j];
+		buffer[j] = buffer[i - j - 1];
+		buffer[i - j - 1] = temp;
+	}
+
 	return (write(1, buffer, len));
 }
 PrintFunction specifiers[] = {
