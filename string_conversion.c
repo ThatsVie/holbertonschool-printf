@@ -10,9 +10,11 @@
 char *itoa(int num, char *str, int base)
 {
 	int i = 0;
-	int isNegative, start, end = 0;
+	int isNegative = 0;
 	char temp;
 	int rem;
+	int start = 0;
+	int end = 0;
 
 	if (num == 0)
 	{
@@ -20,7 +22,7 @@ char *itoa(int num, char *str, int base)
 		str[i] = '\0';
 		return (str);
 	}
-	if (num < 0 && base != 10)
+	if (num < 0 && base == 10)
 	{
 		isNegative = 1;
 		num = -num;
