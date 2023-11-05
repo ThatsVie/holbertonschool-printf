@@ -66,7 +66,7 @@ int _printInt(va_list args)
 	len = strlen(buffer);
 	if (isneg)
 	{
-		buffer[i++] = '=';
+		buffer[i++] = '-';
 	}
 	len = i;
 	for (j = 0; j < i / 2; j++)
