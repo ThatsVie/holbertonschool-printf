@@ -76,4 +76,4 @@ PrintFunction specifiers[] = {
 	{"i", _printInt},
 	{"%", _printPercent},
 	{NULL,NULL}
-}
+};
