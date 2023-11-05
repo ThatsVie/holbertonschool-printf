@@ -1,1 +1,82 @@
-man
+.\" Man page for _printf
+
+.TH _PRINTF 3 "November 2023" "_printf Manual" "Jackie Lovins and Vie Paula"
+.SH NAME
+_printf - formatted output to stdout
+.SH SYNOPSIS
+.B #include <main.h>
+.sp
+.B int _printf(const char *format, ...);
+.SH DESCRIPTION
+This function produces formatted output based on a format string.
+The
+.B _printf
+function is a custom implementation of the C standard library's .B printf function. It provides formatted output to the standard output stream (stdout) based on a format string and additional arguments.
+The 
+.B _printf function takes a format string
+.I format and a variable number of arguments specified by the format string.
+
+The format string can contain plain characters and format specifiers. Format specifiers are introduced with the '%' characterand are followed by a conversion character (e.g., 'd' for integers, 's' for strings, 'c' for characters, and '%' to print a literal '%'). The format specifiers in the format string are replaced with the corresponding values of the additional arguments.
+
+The supported format specifiers are as follows:
+.IP "\fB%c\fP"
+Prints a character.
+.IP "\fB%s\fP"
+Prints a string.
+.IP "\fB%d\fP"
+Prints a signed integer as a decimal number.
+.IP "\fB%i\fP"
+Prints a signed integer as a decimal number
+.IP "\fB%%\fP"
+Prints a literal '%' character.
+
+The
+.B _printf function returns the number of characters printed (excluding the null-terminator) or .B -1 in case of an error.
+.SH RETURN VALUE
+.B _printf
+returns the number of characters printed, excluding the null-terminator ('\0'), or
+.B -1
+in case of an error.
+.SH EXAMPLES
+The following example demonstrates how to use the
+.B _printf
+function:
+
+.BR
+.B #include <main.h>
+.sp
+.B int main(void)
+.B {
+.BR
+.B int n = 42;
+.BR
+.B char *str = "Hello, World!";
+.BR
+.B _printf("This is an integer: %d\n", n);
+.BR
+.B _printf("This is a string: %s\n", str);
+.BR
+.B return (0);
+.B }
+.SH SEE ALSO
+.BR printf(3),
+.BR puts(3),
+.BR putchar(3),
+.BR stdio(3)
+.SH AUTHORS
+This
+.B _printf
+man page was written by Jackie Lovins and Vie Paula.
+.SH REPORTING BUGS
+Please report bugs to your.email@example.com.
+.SH COPYRIGHT
+NA
+.SH NOTES
+.B _printf
+is a custom implementation and may not provide all the features and options of the standard library
+.B printf
+function.
+.SH BUGS
+There are currently no known bugs in this implementation.
+
+
