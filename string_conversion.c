@@ -35,8 +35,10 @@ char *itoa(int num, char *str, int base)
 	}
 	if (isNegative && base == 10)
 		str[i++] = '-';
+	
 	str[i] = '\0';
-	for (start = 0, end = i - 1; start < end; start++, end--)
+
+	for (start = isNegative ? 1 : 0, end = i - 1; start < end; start++, end--)
 	{
 		temp = str[start];
 		str[start] = str[end];
