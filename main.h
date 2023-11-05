@@ -17,9 +17,10 @@ typedef struct PrintFunction
 {
 	char *specifier;
 	int(*function)(va_list);
+
 } PrintFunction;
 
-int _printf(const char *format,...);
+int _printf(const char *format, ...);
 int _printChar(va_list args);
 int _printString(va_list args);
 int _printInt(va_list args);
