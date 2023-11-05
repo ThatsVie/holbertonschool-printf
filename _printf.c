@@ -1,43 +1,80 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 #include <stdarg.h>
 /**
- * _printf - prints formatted data to standard output
- *
+ * _printf - function that produces output
  * @format: format string
- * @...: variable arguments based on format specifiers
  *
- * Return: value of char_count (numbers of characters
- * printed)
+ * Return: number of characters printed, or -1 for error
  */
 
 int _printf(const char *format, ...)
 {
-	int char_count = 0;
-	va_list args;
+	PrintFunction specifiers[] = {
+		{"c", _printChar},
+		{"s", _printString},
+		{"d", _printInt},
+		{"i", _printInt},
+		{"%", _printPercent},
+		{NULL, NULL}
+	};
+	va_list values;
+	int count = 0;
+	int specifier_index
 
-	if (format == NULL)
-	{
+	if (!format)
 		return (-1);
-	}
 
-	va_start(args, format);
+	va_start(values, format);
 
 	while (*format)
 	{
 		if (*format != '%')
 		{
-			putchar(*format);
-			char_count++;
+			count += _putchar(*format);
 		}
 		else
 		{
-			handle_format(&char_count, &format, args);
+			formatt++;
+			specifier_index = find_specifier(format);
+			if (specifier_index >= 0)
+			{
+				count += specifiers[specifier_index].f(values);
+				format++;
+			}
+			else
+			{
+				count += _putchar('%');
+			}
 		}
-
-		format++;
+		format ++;
 	}
 
-	va_end(args);
-	return (char_count);
+	va_end(values);
+	return (count);
+}
+
+/**
+ * find_specifier - find the index of the specifier in the
+ * specifiers array
+ * @format: format string with the % followed by
+ * specifier character
+ *
+ * Return: index of the specifier in the specifiers array,
+ * or -1 if not found
+ */
+
+int find_specifier(const char *format)
+{
+	int i;
+
+	for (i = 0; specifiers[i].t != NULL; i++)
+	{
+		if (*specifiers[i].t == *format)
+		{
+			return (i);
+		}
+	}
+	return (-1);
 }
