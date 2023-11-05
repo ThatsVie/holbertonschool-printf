@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
+
+int handleIntegerSpecifier(va_list *args)
+
 /**
  * _printf - function that produces output
  * @format: format string
@@ -63,7 +66,7 @@ int handleIntegerSpecifier(va_list *args)
 	int isneg = 0;
 	int numdig = 0;
 	int temp;
-	char buffer;
+	char buffer[12];
 
 	if (value < 0)
 	{
