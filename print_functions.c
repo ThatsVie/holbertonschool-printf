@@ -41,9 +41,11 @@ int _printInt(va_list args)
 	char buffer[20];
 	int num = va_arg(args, int);
 	int base = 10;
-	char *str = buffer;
 	int isneg = 0;
-	int len = strlen(str);
+
+	itoa(num, buffer, base);
+
+	int len = strlen(buffer);
 
 	if (num < 0)
 	{
@@ -51,14 +53,11 @@ int _printInt(va_list args)
 		num = -num;
 	}
 
-	itoa(num, str, base);
-
 	if (isneg)
 	{
-		len++;
 		_putchar('-');
 	}
-	return (write(1, buffer, strlen(buffer)));
+	return (write(1, buffer, len));
 }
 PrintFunction specifiers[] = {
 	{"d", _printInt},
