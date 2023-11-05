@@ -95,11 +95,11 @@ int _printInt(va_list args)
 		buffer[i - j - 1] = temp;
 	}
 	return (write(1, buffer, len));
-}
+}*/
 PrintFunction specifiers[] = {
 	{"d", _printInt},
 	{"i", _printInt},
-};*/
+};
 
 /**
  * _printPercent - print  a percent sign
