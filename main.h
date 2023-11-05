@@ -19,7 +19,6 @@ typedef struct PrintFunction
 	int(*function)(va_list);
 } PrintFunction;
 
-extern PrintFunction specifiers[];
 int _printf(const char *format,...);
 int _printChar(va_list args);
 int _printString(va_list args);
