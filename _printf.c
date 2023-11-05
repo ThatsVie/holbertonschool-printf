@@ -65,7 +65,7 @@ int handleIntegerSpecifier(va_list *args)
 	int value = va_arg(*args, int);
 	int isneg = 0;
 	int numdig = 0;
-	int temp;
+	int temp, i,
 	char buffer[12];
 
 	if (value < 0)
@@ -84,10 +84,10 @@ int handleIntegerSpecifier(va_list *args)
 		numdig++;
 	}
 
-	buffer[numdig + isneg];
+	buffer[numdig + isneg] = '\0';
 
 	if (isneg)
-		buffer[] = '-';
+		buffer[0] = '-';
 
 	for (i = numdig + isneg - 1; i >= isneg; i--)
 	{
