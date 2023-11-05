@@ -27,4 +27,10 @@ int _printInt(va_list args);
 int _printPercent(va_list args);
 int _putchar(char c);
 char *itoa(int num, char *str, int base);
+
+PrintFunction specifiers[] = {
+	{"d", _printInt},
+	{"i", _printInt},
+};
+
 #endif
