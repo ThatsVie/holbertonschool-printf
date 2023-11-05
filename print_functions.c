@@ -40,7 +40,7 @@ int _printInt(va_list args)
 {
 	char buffer[20];
 	long int num;
-	int isneg = (num > 0);
+	int isneg = 0;
 	int len, j;
 	int i = 0;
 
