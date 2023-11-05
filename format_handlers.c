@@ -75,9 +75,9 @@ void print_percent(int *char_count)
 void handle_format(int *char_count, const char **format, va_list args)
 {
 
-	(*format)++;
-
 	int count_flag = 1;
+	
+	(*format)++;
 
 	if (**format == '%')
 	{
