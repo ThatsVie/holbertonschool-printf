@@ -33,13 +33,17 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			
+
 			if (*format == '\0')
 			{
 				break;
 			}
+		}
+		else
+		{
 
 			handle_format(&char_count, &format, args);
+			format++;
 		}
 	}
 	va_end(args);
