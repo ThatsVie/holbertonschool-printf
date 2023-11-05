@@ -23,4 +23,5 @@ int _printInt(va_list args);
 int _printPercent(va_list args);
 int _putchar(char c);
 int find_specifier(const char *format);
+char *itoa(int num, char *str, int base);
 #endif
