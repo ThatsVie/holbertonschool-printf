@@ -39,6 +39,8 @@ int _printInt(va_list args)
 	char buffer[20];
 	int num = va_arg(args, int);
 	int count;
+	int base = 10;
+	char *str = buffer;
 
 	count = itoa(num, str, base);
 	return (write(1, buffer, count));
