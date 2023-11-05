@@ -35,10 +35,10 @@ int _printf(const char *format, ...)
 		{
 			for (b = 0; b < sizeof; b++)
 			{
-				if (*specifiers[b].t == format[a + 1])
+				if (*specifiers[b].specifier == format[a + 1])
 				{
 					format++;
-					count += specifiers[b].f(args);
+					count += specifiers[b].function(args);
 					break;
 				}
 			}
