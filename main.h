@@ -18,14 +18,6 @@ typedef struct PrintFunction
 	char *specifier;
 	int(*function)(va_list);
 } PrintFunction;
-PrintFunction specifiers[] = {
-	{"c", _printChar},
-	{"s", _printString},
-	{"d", _printInt},
-	{"i", _printInt},
-	{"%", _printPercent},
-	{NULL, NULL}
-};
 
 int _printf(const char *format,...);
 int _printChar(va_list args);
