@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * itoa - convert an integer to a string
- * @num: integer to be converted @str: character array to store the string 
+ * @num: integer to be converted
+ * @str: character array to store the string
  * @base: numberic base for conversion
  * Return: a pointer to the resulting string
  */
