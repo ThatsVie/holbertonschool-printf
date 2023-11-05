@@ -24,7 +24,7 @@ int _printString(va_list args)
 	char *s = va_arg(args, char *);
 	if (s == NULL)
 		s = "(null)";
-	return (write(1, s, _strlen(s)));
+	return (write(1, s, strlen(s)));
 }
 
 /**
@@ -40,8 +40,8 @@ int _printInt(va_list args)
 	int num = va_arg(args, int);
 	int count;
 
-	count = _itoa(buffer, num);
-	return (write(1, buffer, count);
+	count = itoa(buffer, num);
+	return (write(1, buffer, count));
 }
 
 /**
