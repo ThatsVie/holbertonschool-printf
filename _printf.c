@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdarg.h>
 
-int handleIntegerSpecifier(va_list *args)
+int handleIntegerSpecifier(va_list *args);
 
 /**
  * _printf - function that produces output
@@ -95,6 +95,6 @@ int handleIntegerSpecifier(va_list *args)
 		value /= 10;
 	}
 
-	return write(1, buffer, numdig + isneg);
+	return (write(1, buffer, numdig + isneg));
 }
 
