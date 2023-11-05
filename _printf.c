@@ -45,7 +45,7 @@ int _printf(const char *format, ...)
 			if (b == sizeof(specifiers) / sizeof(specifiers[0]) && format[a + 1] == '\0')
 				return (-1);
 			else if (b == sizeof(specifiers) / sizeof(specifiers[0]) && format[a + 1] != '\0')
-				count += _putchar(format[a];
+				count += _putchar(format[a]);
 		}
 	}
 	va_end(args);

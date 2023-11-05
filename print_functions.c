@@ -69,11 +69,4 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-PrintFunction specifiers [] = {
-	{"c", _printChar},
-	{"s", _printString},
-	{"d", _printInt},
-	{"i", _printInt},
-	{"%", _printPercent}
-	{NULL, NULL}
-};
+
