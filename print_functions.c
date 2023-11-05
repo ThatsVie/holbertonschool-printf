@@ -46,7 +46,7 @@ int _printInt(va_list args)
 	itoa(num, str, base);
 	return (write(1, buffer, strlen(buffer)));
 }
-PrintFuction specifiers[] = {
+PrintFunction specifiers[] = {
 	{"d", _printInt},
 	{"i", _printInt},
 };
