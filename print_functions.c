@@ -61,6 +61,7 @@ int _printInt(va_list args)
 		buffer[i++] = num % 10 + '0';
 		num /= 10;
 	}
+
 	while (num > 0);
 	len = strlen(buffer);
 	if (isneg)
@@ -69,6 +70,7 @@ int _printInt(va_list args)
 	}
 	len = i;
 	for (j = 0; j < i / 2; j++)
+
 	{
 		char temp = buffer[j];
 		buffer[j] = buffer[i - j - 1];
