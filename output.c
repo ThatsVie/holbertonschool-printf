@@ -2,7 +2,8 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_int - formats and prints and integer
+ * print_int - formats and prints an integer value and calculates
+ * number of digits  in num
  *
  * @char_count: pointerto integer that keeps track of
  * number of characters printed
