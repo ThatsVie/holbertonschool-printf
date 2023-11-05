@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
+#include <unistd.h>
 
 int handleIntegerSpecifier(va_list *args);
 
@@ -65,7 +66,7 @@ int handleIntegerSpecifier(va_list *args)
 	int value = va_arg(*args, int);
 	int isneg = 0;
 	int numdig = 0;
-	int temp, i,
+	int temp, i;
 	char buffer[12];
 
 	if (value < 0)
@@ -74,7 +75,7 @@ int handleIntegerSpecifier(va_list *args)
 		value = -value;
 	}
 	if (value == 0)
-		return _putchar('\0');
+		return _putchar('0');
 
 	temp = value;
 
@@ -95,6 +96,6 @@ int handleIntegerSpecifier(va_list *args)
 		value /= 10;
 	}
 
-	return (write(1, buffer, numdig + isneg));
+	return write(1, buffer, numdig + isneg);
 }
 
