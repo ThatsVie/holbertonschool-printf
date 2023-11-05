@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 			count += _putchar(format[a]);
 		else
 		{
-			for (b = 0; b < sizeof; b++)
+			for (b = 0; b < sizeof(specifiers)/sizeof(specifiers[0]); b++)
 			{
 				if (*specifiers[b].specifier == format[a + 1])
 				{
@@ -42,9 +42,9 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
-			if (b == sizeof && format[a + 1] == '\0')
+			if (b == sizeof(specifiers) / sizeof(specifiers[0]) && format[a + 1] == '\0')
 				return (-1);
-			else if (b == sizeof && format[a + 1] != '\0')
+			else if (b == sizeof(specifiers) / sizeof(specifiers[0]) && format[a + 1] != '\0')
 				count += _putchar(format[a];
 		}
 	}
