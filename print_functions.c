@@ -42,8 +42,8 @@ int _printInt(va_list args)
 	int base = 10;
 	char *str = buffer;
 
-	count = itoa(num, str, base);
-	return (write(1, buffer, count));
+	itoa(num, str, base);
+	return (write(1, buffer, strlen(buffer));
 }
 
 /**
