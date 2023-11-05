@@ -39,10 +39,19 @@ int _printString(va_list args)
 int _printInt(va_list args)
 {
 	char buffer[20];
-	int num = va_arg(args, int);
+	long long int num;
 	int base = 10;
 	int isneg = 0;
 	int len;
+
+	if (sizeof(int) == sizeof(long long int))
+	{
+		num = va_arg(args, long long int);
+	}
+	else
+	{
+		num = va_arg(args, int);
+	}
 
 	if (num < 0)
 	{
@@ -50,7 +59,7 @@ int _printInt(va_list args)
 		num = -num;
 	}
 
-	itoa(num, buffer, base);
+	lltoa(num, buffer, base);
 
 	len = strlen(buffer);
 
