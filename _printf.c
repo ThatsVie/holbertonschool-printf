@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 			specifier_index = find_specifier(format);
 			if (specifier_index >= 0)
 			{
-				count += specifiers[specifier_index].f(values);
+				count += specifiers[specifier_index].function(values);
 				format++;
 			}
 			else
@@ -68,10 +68,11 @@ int _printf(const char *format, ...)
 int find_specifier(const char *format)
 {
 	int i;
+	extern PrintFunction specifiers[];
 
-	for (i = 0; specifiers[i].t != NULL; i++)
+	for (i = 0; specifiers[i].specifier != NULL; i++)
 	{
-		if (*specifiers[i].t == *format)
+		if (*specifiers[i].specifier  == *format)
 		{
 			return (i);
 		}
