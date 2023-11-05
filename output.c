@@ -36,9 +36,9 @@ void print_int (int *char_count, int num)
 	}
 	while (digits > 0)
 	{
-		current_digits = num / divisor;
+		current_digit = num / divisor;
 		num %= divisor;
-		putchar('0' + digit);
+		putchar('0' + current_digit);
 		(*char_count)++;			  
 		digits--;
 		divisor = 1;
