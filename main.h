@@ -27,4 +27,6 @@ int _printInt(va_list args);
 int _printPercent(va_list args);
 int _putchar(char c);
 char *itoa(int num, char *str, int base);
+int handleIntegerSpecifier(va_list *args);
+
 #endif
