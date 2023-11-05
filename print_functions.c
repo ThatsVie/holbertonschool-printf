@@ -56,3 +56,14 @@ int _printPercent(va_list args)
 	(void)args;
 	return (write(1, &p, 1));
 }
+/**
+ * _putchar - writes character to standard output
+ * @c: character
+ *
+ * Return: number of characters written or -1 error
+ */
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
