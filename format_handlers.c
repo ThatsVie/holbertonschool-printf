@@ -79,6 +79,11 @@ void handle_format(int *char_count, const char **format, va_list args)
 	len = _printf("%");
 	len2 = printf("%");
 
+	if (len != len2)
+	{
+		putchar('\0');
+	}
+
 	(*format)++;
 
 	if (**format == '%')
@@ -94,10 +99,6 @@ void handle_format(int *char_count, const char **format, va_list args)
 		format_int(char_count, args);
 	else
 	{
-		if (len != len2)
-		{
-			putchar('\0');
-		}
 		putchar('%');
 		putchar(**format);
 		(*char_count) += 2;
