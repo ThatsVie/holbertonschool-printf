@@ -30,11 +30,9 @@ int _printf(const char *format, ...)
 			putchar(*format);
 			char_count++;
 		}
-		else if (*(format + 1) == '\0')
+		else
 		{
-			format++;
 			handle_format(&char_count, &format, args);
-
 		}
 
 		format++;
