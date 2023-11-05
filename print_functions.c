@@ -57,23 +57,26 @@ int _printInt(va_list args)
 		isneg = 1;
 		num = -num;
 	}
-	do
-	{
+	do {
 		buffer[i++] = num % 10 + '0';
 		num /= 10;
 	}
+
 	while (num > 0);
 	len = strlen(buffer);
 	if (isneg)
 	{
-		buffer[i++] = '=';
+		buffer[i++] = '-';
 	}
 	len = i;
 	for (j = 0; j < i / 2; j++)
+
 	{
 		char temp = buffer[j];
+
 		buffer[j] = buffer[i - j - 1];
 		buffer[i - j - 1] = temp;
+
 	}
 	return (write(1, buffer, len));
 }
