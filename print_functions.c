@@ -40,10 +40,10 @@ int _printInt(va_list args)
 {
 	char buffer[20];
 	long int num;
-	int base = 10;
 	int isneg = 0;
 	int len;
 	int i = 0;
+	int j;
 
 	if (sizeof(int) == sizeof(long int))
 	{
@@ -65,7 +65,7 @@ int _printInt(va_list args)
 		buffer[i++] = num % 10 + '0';
 		num /= 10;
 	}
-	while (num > 0)
+	while (num > 0);
 
 	len = strlen(buffer);
 
@@ -75,7 +75,7 @@ int _printInt(va_list args)
 	}
 
 	len = i;
-	for (int j = 0; j < i / 2; j++)
+	for (j = 0; j < i / 2; j++)
 	{
 		char temp = buffer[j];
 		buffer[j] = buffer[i - j - 1];
