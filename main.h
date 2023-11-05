@@ -16,7 +16,7 @@
 typedef struct PrintFunction
 {
 	char *specifier;
-	int(*function)(va_list);
+	int (*function)(va_list);
 
 } PrintFunction;
 
