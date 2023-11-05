@@ -9,11 +9,9 @@ _printf - formatted output to stdout
 .B int _printf(const char *format, ...);
 .SH DESCRIPTION
 This function produces formatted output based on a format string.
-The
-.B _printf
+The .B _printf
 function is a custom implementation of the C standard library's .B printf function. It provides formatted output to the standard output stream (stdout) based on a format string and additional arguments.
-The 
-.B _printf function takes a format string
+The .B _printf function takes a format string
 .I format and a variable number of arguments specified by the format string.
 
 The format string can contain plain characters and format specifiers. Format specifiers are introduced with the '%' characterand are followed by a conversion character (e.g., 'd' for integers, 's' for strings, 'c' for characters, and '%' to print a literal '%'). The format specifiers in the format string are replaced with the corresponding values of the additional arguments.
@@ -30,8 +28,7 @@ Prints a signed integer as a decimal number
 .IP "\fB%%\fP"
 Prints a literal '%' character.
 
-The
-.B _printf function returns the number of characters printed (excluding the null-terminator) or .B -1 in case of an error.
+The .B _printf function returns the number of characters printed (excluding the null-terminator) or .B -1 in case of an error.
 .SH RETURN VALUE
 .B _printf
 returns the number of characters printed, excluding the null-terminator ('\0'), or
@@ -64,9 +61,7 @@ function:
 .BR putchar(3),
 .BR stdio(3)
 .SH AUTHORS
-This
-.B _printf
-man page was written by Jackie Lovins and Vie Paula.
+This.B _printf man page was written by Jackie Lovins and Vie Paula.
 .SH REPORTING BUGS
 Please report bugs to your.email@example.com.
 .SH COPYRIGHT
