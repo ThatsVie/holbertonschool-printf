@@ -39,13 +39,31 @@ int _printString(va_list args)
 int _printInt(va_list args)
 {
 	char buffer[20];
-	long int num;
-	int isneg = 0;
+	long int num = va_arg(args, long int);
+	int isneg = (num > 0);
 	int len;
 	int i = 0;
-	int j;
 
-	if (sizeof(int) == sizeof(long int))
+	if (isneg)
+		num = -num;
+
+	do 
+	{
+		buffer[len++] = num % 10 + '0';
+        	num /= 10;
+	}
+	while (num > 0);
+
+	if (isneg)
+		buffer[len++] = '-';
+
+	for (i = len - 1; i >= 0; i--)
+		_putchar(buffer[i]);
+
+	return len;
+}	
+
+	/** if (sizeof(int) == sizeof(long int))
 	{
 		num = va_arg(args, long int);
 	}
@@ -53,27 +71,22 @@ int _printInt(va_list args)
 	{
 		num = va_arg(args, int);
 	}
-
 	if (num < 0)
 	{
 		isneg = 1;
 		num = -num;
 	}
-
-	do 
+	do
 	{
 		buffer[i++] = num % 10 + '0';
 		num /= 10;
 	}
 	while (num > 0);
-
 	len = strlen(buffer);
-
 	if (isneg)
 	{
 		buffer[i++] = '=';
 	}
-
 	len = i;
 	for (j = 0; j < i / 2; j++)
 	{
@@ -81,13 +94,12 @@ int _printInt(va_list args)
 		buffer[j] = buffer[i - j - 1];
 		buffer[i - j - 1] = temp;
 	}
-
 	return (write(1, buffer, len));
 }
 PrintFunction specifiers[] = {
 	{"d", _printInt},
 	{"i", _printInt},
-};
+};*/
 
 /**
  * _printPercent - print  a percent sign
