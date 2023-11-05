@@ -14,6 +14,9 @@ char *itoa(int num, char *str, int base)
 	int i = 0;
 	int isNegative = 0;
 	int rem;
+	int start = 0;
+	int end = 0;
+	char temp;
 
 	if (num == 0)
 	{
@@ -39,10 +42,6 @@ char *itoa(int num, char *str, int base)
 		str[i++] = '-';
 
 	str[i] = '\0';
-
-	int start = 0;
-	int end = i - 1;
-	char temp;
 
 	while (start < end)
 	{
