@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * _printf - takes a variable number of arguments
+ * _printf - prints formatted data to standard output
  *
- * @format: pointer to a format string
+ * @format: format string
+ * @...: variable arguments based on format specifiers
  *
  * Return: value of char_count (numbers of characters
  * printed)

@@ -1,25 +1,28 @@
 #include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * print_int - formats and prints and integer
  *
- * @char_count: a pointer to an integer that
- * keeps track of the number of characters printed
- * @num: the integer value to be formatted and printed
+ * @char_count: pointerto integer that keeps track of
+ * number of characters printed
+ * @num: interger value to be formatted and printed
  */
-void print_int(int *char_count, int num)
+
+void print_int (int *char_count, int num)
 {
-	int temp, digits, divisor, i, digit;
+	int divisor = 1;
+	int digits = 0;
+	int temp = num;
+	int current_digit;
+	int i;
 
 	if (num < 0)
 	{
-		putchar ('-');
+		putchar('-');
 		(*char_count)++;
 		num = -num;
 	}
-
-	temp = num;
-	digits = 0;
 	do {
 		temp /= 10;
 		digits++;
@@ -27,17 +30,11 @@ void print_int(int *char_count, int num)
 
 	while (temp);
 
-	divisor = 1;
-	digit = 0;
 	for (i = digits - 1; i >= 0; i--)
 	{
-		divisor *= 10;
-	}
-	while (digits > 0)
-	{
-		digit = num / divisor;
+		current_digit = num / divisor;
 		num %= divisor;
-		putchar('0' + digit);
+		putchar(current_digit);
 		(*char_count)++;
 		digits--;
 		divisor = 1;

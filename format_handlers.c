@@ -51,16 +51,18 @@ void format_int(int *char_count, va_list args)
 	print_int(char_count, num);
 }
 /**
- * format_percent - formats and prints %
+ * print_percent - handles '%'
  *
- * @char_count: a pointer to an integer that keeps
- * track of the number of characters printed
+ * @char_count: pointer to integer that keeps track of
+ * number of characters printed
  */
-void format_percent(int *char_count)
+
+void print_percent(int *char_count)
 {
-	putchar ('%');
+	putchar('%');
 	(*char_count)++;
 }
+
 /**
  * handle_format - handles different format specifiers
  * in a format string
@@ -82,7 +84,8 @@ void handle_format(int *char_count, const char **format, va_list args)
 		format_int(char_count, args);
 	else if (**format == '%')
 	{
-		format_percent(char_count);
+		putchar ('%');
+		(*char_count)++;
 	}
 	else
 	{
