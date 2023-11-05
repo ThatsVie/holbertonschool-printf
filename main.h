@@ -2,7 +2,10 @@
 #define MAIN_H
 
 #include <stdarg.h>
-
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <stdio.h>
 /**
  * struct PrintFunction - structure to store format specifer
  * and associated function
