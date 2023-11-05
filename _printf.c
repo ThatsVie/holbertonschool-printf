@@ -41,7 +41,6 @@ int _printf(const char *format, ...)
 
 			handle_format(&char_count, &format, args);
 		}
-		format++;
 	}
 	va_end(args);
 	return (char_count);
