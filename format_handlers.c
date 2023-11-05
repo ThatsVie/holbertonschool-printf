@@ -97,7 +97,4 @@ void handle_format(int *char_count, const char **format, va_list args)
 		(*char_count) += 2;
 		count_flag = 0;
 	}
-
-	if (count_flag)
-		(*char_count)++;
 }
