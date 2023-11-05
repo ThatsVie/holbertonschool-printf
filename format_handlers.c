@@ -46,6 +46,10 @@ void format_string(int *char_count, va_list args)
  */
 void format_int(int *char_count, va_list args)
 {
+	if (char_count == NULL)
+	{
+		return;
+	}
 	int num = va_arg(args, int);
 
 	print_int(char_count, num);
@@ -74,7 +78,7 @@ void print_percent(int *char_count)
  */
 void handle_format(int *char_count, const char **format, va_list args)
 {
-	
+
 	(*format)++;
 
 	if (**format == '%')
