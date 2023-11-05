@@ -26,6 +26,5 @@ int _printString(va_list args);
 int _printInt(va_list args);
 int _printPercent(va_list args);
 int _putchar(char c);
-char *itoa(int num, char *str, int base;
-
+char *itoa(int num, char *str, int base);
 #endif
