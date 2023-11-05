@@ -8,7 +8,8 @@
  */
 char *itoa(int num, char *str, int base)
 {
-	int i, isNegative, start, end = 0;
+	int i = 0;
+	int isNegative, start, end = 0;
 	char temp;
 	int rem;
 
