@@ -57,8 +57,7 @@ int _printInt(va_list args)
 		isneg = 1;
 		num = -num;
 	}
-	do
-	{
+	do {
 		buffer[i++] = num % 10 + '0';
 		num /= 10;
 	}
@@ -74,6 +73,7 @@ int _printInt(va_list args)
 		char temp = buffer[j];
 		buffer[j] = buffer[i - j - 1];
 		buffer[i - j - 1] = temp;
+
 	}
 	return (write(1, buffer, len));
 }
