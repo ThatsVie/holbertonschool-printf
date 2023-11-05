@@ -17,6 +17,8 @@ typedef struct PrintFunction
 {
 	char *specifier;
 	int (*function)(va_list);
+	{"d", _printInt},
+	{"i", _printInt},
 
 } PrintFunction;
 
@@ -27,10 +29,5 @@ int _printInt(va_list args);
 int _printPercent(va_list args);
 int _putchar(char c);
 char *itoa(int num, char *str, int base);
-
-PrintFunction specifiers[] = {
-	{"d", _printInt},
-	{"i", _printInt},
-};
 
 #endif
