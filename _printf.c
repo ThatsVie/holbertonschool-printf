@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 	};
 	va_list args;
 	int count = 0;
-	int a = 0
+	int a = 0;
 	size_t b = 0;
 
 	if (!format)
