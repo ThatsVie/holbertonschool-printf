@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdarg.h>
 /**
  * _printf - function that produces output
  * @format: format string
