@@ -68,7 +68,6 @@ int _printf(const char *format, ...)
 int find_specifier(const char *format)
 {
 	int i;
-	extern PrintFunction specifiers[];
 
 	for (i = 0; specifiers[i].specifier != NULL; i++)
 	{
