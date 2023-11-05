@@ -46,11 +46,12 @@ void format_string(int *char_count, va_list args)
  */
 void format_int(int *char_count, va_list args)
 {
+	int num = va_arg(args, int);
+
 	if (char_count == NULL)
 	{
 		return;
 	}
-	int num = va_arg(args, int);
 
 	print_int(char_count, num);
 }
