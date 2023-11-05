@@ -32,10 +32,14 @@ void print_int (int *char_count, int num)
 
 	for (i = digits - 1; i >= 0; i--)
 	{
-		current_digit = num / divisor;
+		divisor *= 10;
+	}
+	while (digits > 0)
+	{
+		digit = num / divisor;
 		num %= divisor;
-		putchar(current_digit);
-		(*char_count)++;
+		putchar('0' + digit);
+		(*char_count)++;			  
 		digits--;
 		divisor = 1;
 	}
