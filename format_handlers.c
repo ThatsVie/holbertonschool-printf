@@ -74,6 +74,11 @@ void print_percent(int *char_count)
  */
 void handle_format(int *char_count, const char **format, va_list args)
 {
+	int len, len2;
+
+	len = _printf("%");
+	len2 = printf("%");
+
 	(*format)++;
 
 	if (**format == '%')
@@ -89,7 +94,11 @@ void handle_format(int *char_count, const char **format, va_list args)
 		format_int(char_count, args);
 	else
 	{
-		putchar('\0');
+		if (len != len2)
+		{
+			putchar('\0');
+		}
+		putchar('%');
 		putchar(**format);
 		(*char_count) += 2;
 	}
