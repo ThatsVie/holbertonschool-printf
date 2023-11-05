@@ -42,11 +42,9 @@ int _printInt(va_list args)
 	int num = va_arg(args, int);
 	int base = 10;
 	int isneg = 0;
-
-	itoa(num, buffer, base);
-
 	int len = strlen(buffer);
 
+	itoa(num, buffer, base);
 	if (num < 0)
 	{
 		isneg = 1;
