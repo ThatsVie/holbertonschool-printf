@@ -2,7 +2,6 @@
 #define MAIN_H
 
 #include <stdarg.h>
-#include <unistd.h>
 
 /**
  * struct PrintFunction - structure to store format specifer
@@ -11,7 +10,7 @@
  * @function: a pointer to the corresponding printing function
  */
 
-typedef struct
+typedef struct PrintFunction
 {
 	char *specifier;
 	int(*function)(va_list);
