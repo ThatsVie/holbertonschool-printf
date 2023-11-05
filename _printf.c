@@ -19,41 +19,36 @@ int _printf(const char *format, ...)
 		{"%", _printPercent},
 		{NULL, NULL}
 	};
-	va_list values;
+	va_list args;
 	int count = 0;
-	int specifier_index;
+	int a, b = 0;
 
 	if (!format)
 		return (-1);
 
-	va_start(values, format);
-
-	while (*format)
+	va_start(args, format);
+	for (a = 0; format[a] != '\0'; a++)
 	{
-		if (*format != '%')
-		{
-			count += _putchar(*format);
-		}
+		if (format[a] != '%')
+			count += _putchar(format[a]);
 		else
 		{
-			format++;
-			specifier_index = find_specifier(format);
-			if (specifier_index >= 0)
+			for (b = 0; b < sizeof; b++)
 			{
-				count += specifiers[specifier_index].function(values);
-				format++;
+				if (*specifiers[b].t == format[a + 1])
+				{
+					format++;
+					count += specifiers[b].f(args);
+					break;
+				}
 			}
-			else
-			{
-				count += _putchar('%');
-			}
+			if (b == sizeof && format[a + 1] == '\0')
+				return (-1);
+			else if (b == sizeof && format[a + 1] != '\0')
+				count += _putchar(format[a];
 		}
-		format ++;
 	}
-
-	va_end(values);
+	va_end(args);
 	return (count);
 }
-
-
-
+	
