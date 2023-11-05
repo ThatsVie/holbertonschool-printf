@@ -89,8 +89,8 @@ void handle_format(int *char_count, const char **format, va_list args)
 		format_int(char_count, args);
 	else
 	{
-		putchar('%');
+		putchar('\0');
 		putchar(**format);
-		(*char_count) += 3;
+		(*char_count) += 2;
 	}
 }
