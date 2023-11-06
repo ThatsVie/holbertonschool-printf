@@ -15,11 +15,11 @@
 
 typedef struct PrintFunction
 {
-	char *specifier;
-	int (*function)(va_list);
+	char *specifier;/*Format specifier string*/
+	int (*function)(va_list);/*Pointer to the corresponding printing function*/
 
 } PrintFunction;
-
+/*All needed function prototypes stored here*/
 int _printf(const char *format, ...);
 int _printChar(va_list args);
 int _printString(va_list args);
