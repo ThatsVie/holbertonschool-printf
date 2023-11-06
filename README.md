@@ -18,7 +18,7 @@ Our printf fuction works through four distinct files, each code file works in ta
 ### 🌟 [main.h](https://github.com/ThatsVie/holbertonschool-printf/blob/main/main.h)
 - This file is the header file that contains our prototypes called.
 
-### 🌟 [output.c](https://github.com/ThatsVie/holbertonschool-printf/blob/main/output.c)
+### 🌟 [string_conversion.c](https://github.com/ThatsVie/holbertonschool-printf/blob/Jackie/string_conversion.c)
 - This code file allows the _printf function to format and print integers correctly
 
 #
