@@ -7,6 +7,8 @@
 
 ## Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
 
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
 Our printf fuction works through four distinct files, each code file works in tandum to produce output according to a format. Files are listed bellow:
 
 ### 🌟 [_printf](https://github.com/ThatsVie/holbertonschool-printf/blob/main/_printf.c)
@@ -21,6 +23,11 @@ Our printf fuction works through four distinct files, each code file works in ta
 ### 🌟 [string_conversion.c](https://github.com/ThatsVie/holbertonschool-printf/blob/Jackie/string_conversion.c)
 - This code file allows the _printf function to format and print integers correctly
 
+[![Our GitHub stats](https://github-readme-stats.vercel.app/api?username=ThatsVie&theme=tokyonight)](https://github.com/ThatsVie/holbertonschool-printf)
+
+
 #
-### Yay!
-![kitty](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtguQl4ahyEPvsWB4rTkN-1b9yEKpGM4K-7gJLvhaTQ&s)
+
+<img align="right" alt="Coding" width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtguQl4ahyEPvsWB4rTkN-1b9yEKpGM4K-7gJLvhaTQ&s">
+
+
