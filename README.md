@@ -54,14 +54,18 @@ Defines an array specifiers that holds the format specifiers and their correspon
 </details>
 
 #
+<br>
 
-[![Check out our Man page!](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/f183358d-5da5-4d43-99a8-3dbd5f8534ad)](https://github.com/ThatsVie/holbertonschool-printf/blob/main/man_3_printf)
+|[Check_out_our_Man_page!](https://github.com/ThatsVie/holbertonschool-printf/blob/main/man_3_printf)|
+|---|
+
 #
+
 [![Our GitHub stats](https://github-readme-stats.vercel.app/api?username=ThatsVie&theme=tokyonight)](https://github.com/ThatsVie/holbertonschool-printf)
 
 
 #
 
-<img align="right" alt="Coding" width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtguQl4ahyEPvsWB4rTkN-1b9yEKpGM4K-7gJLvhaTQ&s">
-
-
+<p align="center">
+  <img width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtguQl4ahyEPvsWB4rTkN-1b9yEKpGM4K-7gJLvhaTQ&s">
+</p>
