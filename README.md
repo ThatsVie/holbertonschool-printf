@@ -46,6 +46,10 @@ Defines an array specifiers that holds the format specifiers and their correspon
   
 ### 🌟 [string_conversion.c](https://github.com/ThatsVie/holbertonschool-printf/blob/Jackie/string_conversion.c)
 - This code file allows the _printf function to format and print integers correctly
+<details>
+<summary>Function Details</summary>
+<ul><li>Boop ❤️</li>
+</details>
 
 ### 🌟 [main.h](https://github.com/ThatsVie/holbertonschool-printf/blob/main/main.h)
 - This code is the header file that contains our prototypes.
