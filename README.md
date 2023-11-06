@@ -7,6 +7,8 @@
 
 ## Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
 
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
 Our printf fuction works through four distinct files, each code file works in tandum to produce output according to a format. Files are listed bellow:
 
 ### 🌟 [_printf](https://github.com/ThatsVie/holbertonschool-printf/blob/main/_printf.c)
