@@ -23,6 +23,9 @@ Our printf fuction works through four distinct files, each code file works in ta
 ### 🌟 [string_conversion.c](https://github.com/ThatsVie/holbertonschool-printf/blob/Jackie/string_conversion.c)
 - This code file allows the _printf function to format and print integers correctly
 
+[![Our GitHub stats](https://github-readme-stats.vercel.app/api?username=ThatsVie&theme=tokyonight)](https://github.com/ThatsVie/holbertonschool-printf)
+
+
 #
 ### Yay!
 ![kitty](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtguQl4ahyEPvsWB4rTkN-1b9yEKpGM4K-7gJLvhaTQ&s)
