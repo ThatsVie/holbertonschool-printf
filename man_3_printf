@@ -16,7 +16,8 @@ The
 .B _printf function takes a format string
 .I format and a variable number of arguments specified by the format string.
 
-The format string can contain plain characters and format specifiers. Format specifiers are introduced with the '%' characterand are followed by a conversion character (e.g., 'd' for integers, 's' for strings, 'c' for characters, and '%' to print a literal '%'). The format specifiers in the format string are replaced with the corresponding values of the additional arguments.
+The format string can contain plain characters and format specifiers.
+Format specifiers are introduced with the '%' characterand are followed by a conversion character (e.g., 'd' for integers, 's' for strings, 'c' for characters, and '%' to print a literal '%'). The format specifiers in the format string are replaced with the corresponding values of the additional arguments.
 
 The supported format specifiers are as follows:
 .IP "\fB%c\fP"
@@ -66,17 +67,13 @@ function:
 .SH AUTHORS
 This
 .B _printf
-man page was written by Jackie Lovins and Vie Paula.
-.SH REPORTING BUGS
-Please report bugs to your.email@example.com.
-.SH COPYRIGHT
-NA
+man page was written by Jackie Lovins (@Srixx24) and Vie Paula (@ThatsVie)
+
 .SH NOTES
 .B _printf
-is a custom implementation and may not provide all the features and options of the standard library
+is a custom implementation and may not provide all the features and options of thestandard library
 .B printf
 function.
 .SH BUGS
 There are currently no known bugs in this implementation.
-
 
