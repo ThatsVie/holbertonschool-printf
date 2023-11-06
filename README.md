@@ -1,9 +1,10 @@
-
-![Printf_Function (1)](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/052145cf-984d-43c1-ae87-55eb6a78e7b6)
+![Printf_Function](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/75129953-9781-4c82-adf5-b4806eaae021)
 
 <p align="center">
 ✨by <a href="https://github.com/ThatsVie/">Vie</a> and  <a href="https://github.com/Srixx24/">Jackie</a> ✨
 </p>
+
+
 
 ## Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
 
@@ -53,7 +54,8 @@ Defines an array specifiers that holds the format specifiers and their correspon
 </details>
 
 #
-[Check out our Man page!](https://github.com/ThatsVie/holbertonschool-printf/blob/main/man_3_printf)
+
+[![Check out our Man page!](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/f183358d-5da5-4d43-99a8-3dbd5f8534ad)](https://github.com/ThatsVie/holbertonschool-printf/blob/main/man_3_printf)
 #
 [![Our GitHub stats](https://github-readme-stats.vercel.app/api?username=ThatsVie&theme=tokyonight)](https://github.com/ThatsVie/holbertonschool-printf)
 
