@@ -12,7 +12,7 @@ Our printf fuction works through four distinct files, each code file works in ta
 ### 🌟 [_printf](https://github.com/ThatsVie/holbertonschool-printf/blob/main/_printf.c)
 - The _printf function is a variadic function that takes a format string as its first argument, followed by a variable number of additional arguments.
 
-### 🌟 [format_handlers.c](https://github.com/ThatsVie/holbertonschool-printf/blob/main/format_handlers.c)
+### 🌟 [print_functions.c](https://github.com/ThatsVie/holbertonschool-printf/blob/Jackie/print_functions.c)
 - This code uses mulitple functions to handle the appropriate formatting function based on the encountered format specifier and updating the char_count accordingly.
 
 ### 🌟 [main.h](https://github.com/ThatsVie/holbertonschool-printf/blob/main/main.h)
