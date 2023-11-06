@@ -18,7 +18,7 @@ The .B _printf function takes a format string
 
 The format string can contain plain characters and format specifiers.
 Format specifiers are introduced with the '%' characterand are followed by a conversion character 
-(e.g., 'd' for integers, 's' for strings, 'c' for characters, and '%' to print a literal '%'). 
+(e.g., 'd' and 'i' for integers, 's' for strings, 'c' for characters, and '%' to print a literal '%'). 
 The format specifiers in the format string are replaced with the corresponding values 
 of the additional arguments.
 
