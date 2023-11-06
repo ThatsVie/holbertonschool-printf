@@ -59,8 +59,9 @@ Defines an array specifiers that holds the format specifiers and their correspon
 |[Check_out_our_Man_page!](https://github.com/ThatsVie/holbertonschool-printf/blob/main/man_3_printf)|
 |---|
 
-#
+<br>
 
+#
 [![Our GitHub stats](https://github-readme-stats.vercel.app/api?username=ThatsVie&theme=tokyonight)](https://github.com/ThatsVie/holbertonschool-printf)
 
 
