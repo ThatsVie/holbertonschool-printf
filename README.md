@@ -4,12 +4,17 @@
 ✨by <a href="https://github.com/ThatsVie/">Vie</a> and  <a href="https://github.com/Srixx24/">Jackie</a> ✨
 </p>
 
+<br>
 
 
+# Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
+<br>
 
-## Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
 
 ![Static Badge](https://img.shields.io/badge/Cool%20Cats-Cool%20Code-purple?style=string&logoColor=purple) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
+
+<br>
+<br>
 
 Our printf fuction works through three distinct code files, each code works in tandum to produce output according to a format. Code files are listed bellow:
 
