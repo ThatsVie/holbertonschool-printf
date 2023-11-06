@@ -43,6 +43,9 @@ Defines an array specifiers that holds the format specifiers and their correspon
 <li>The _printPercent function takes a va_list argument named args, but it doesn't use it. It writes a '%' character to the standard output using write and returns the number of characters written.</li>
 <li>The _putchar function takes a character argument c and writes it to the standard output using write. It returns the number of characters written.</li>
 </details>
+  
+### 🌟 [string_conversion.c](https://github.com/ThatsVie/holbertonschool-printf/blob/Jackie/string_conversion.c)
+- This code file allows the _printf function to format and print integers correctly
 
 ### 🌟 [main.h](https://github.com/ThatsVie/holbertonschool-printf/blob/main/main.h)
 - This code is the header file that contains our prototypes.
@@ -51,9 +54,8 @@ Defines an array specifiers that holds the format specifiers and their correspon
 <ul><li>The code defines a structure called PrintFunction. This structure is used to store a format specifier and its associated printing function, specifier (A string that represents a format specifier) and function (A function pointer that points to the corresponding printing function for the format specifier)</li>
 <li>The code declares function prototypes for various functions used in the implementation of the _printf function and the printing of different types of data</li>
 </details>
-  
-### 🌟 [string_conversion.c](https://github.com/ThatsVie/holbertonschool-printf/blob/Jackie/string_conversion.c)
-- This code file allows the _printf function to format and print integers correctly
+
+#
 
 [![Our GitHub stats](https://github-readme-stats.vercel.app/api?username=ThatsVie&theme=tokyonight)](https://github.com/ThatsVie/holbertonschool-printf)
 
