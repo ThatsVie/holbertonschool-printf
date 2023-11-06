@@ -27,5 +27,7 @@ Our printf fuction works through four distinct files, each code file works in ta
 
 
 #
-### Yay!
-![kitty](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtguQl4ahyEPvsWB4rTkN-1b9yEKpGM4K-7gJLvhaTQ&s)
+
+<img align="right" alt="Coding" width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtguQl4ahyEPvsWB4rTkN-1b9yEKpGM4K-7gJLvhaTQ&s">
+
+
