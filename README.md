@@ -65,6 +65,7 @@ Defines an array specifiers that holds the format specifiers and their correspon
 #
 [![Our GitHub stats](https://github-readme-stats.vercel.app/api?username=ThatsVie&theme=tokyonight)](https://github.com/ThatsVie/holbertonschool-printf)
 
+![carbon](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/2e7c9329-5f82-4a38-851f-72c334918f22)
 
 #
 
