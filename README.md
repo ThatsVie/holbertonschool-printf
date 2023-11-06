@@ -45,8 +45,13 @@ Defines an array specifiers that holds the format specifiers and their correspon
 </details>
 
 ### 🌟 [main.h](https://github.com/ThatsVie/holbertonschool-printf/blob/main/main.h)
-- This file is the header file that contains our prototypes called.
-
+- This code is the header file that contains our prototypes.
+<details>
+<summary>Function Details</summary>
+<ul><li>The code defines a structure called PrintFunction. This structure is used to store a format specifier and its associated printing function, specifier (A string that represents a format specifier) and function (A function pointer that points to the corresponding printing function for the format specifier)</li>
+<li>The code declares function prototypes for various functions used in the implementation of the _printf function and the printing of different types of data</li>
+</details>
+  
 ### 🌟 [string_conversion.c](https://github.com/ThatsVie/holbertonschool-printf/blob/Jackie/string_conversion.c)
 - This code file allows the _printf function to format and print integers correctly
 
