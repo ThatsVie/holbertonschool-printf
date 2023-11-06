@@ -4,6 +4,7 @@
 ✨by <a href="https://github.com/ThatsVie/">Vie</a> and  <a href="https://github.com/Srixx24/">Jackie</a> ✨
 </p>
 
+![Static Badge](https://img.shields.io/badge/Cool%20Cats-Cool%20Code-purple?style=string&logoColor=purple)
 
 
 ## Our Repo for the [Printf Project](https://github.com/ThatsVie/holbertonschool-printf) 💕
