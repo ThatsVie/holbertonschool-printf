@@ -11,7 +11,7 @@
 <br>
 
 <h3><p align="center">
-Directory for our <a href="https://github.com/ThatsVie/holbertonschool-printf/">Printf Project</a> 💕
+Directory of our <a href="https://github.com/ThatsVie/holbertonschool-printf/">Printf Project</a> 💕
 </p></h3>
 
 Our printf fuction works through three distinct code files, each code works in tandum to produce output according to a format. Code files are listed bellow:
