@@ -57,8 +57,10 @@ Defines an array specifiers that holds the format specifiers and their correspon
 <li>The code declares function prototypes for various functions used in the implementation of the _printf function and the printing of different types of data</li>
 </details>
 
-#
 <br>
+<br>
+<br>
+
 
 |[Check_out_our_Man_page!](https://github.com/ThatsVie/holbertonschool-printf/blob/main/man_3_printf)|
 |---|
@@ -70,6 +72,11 @@ Defines an array specifiers that holds the format specifiers and their correspon
 ![carbon](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/2e7c9329-5f82-4a38-851f-72c334918f22)
 
 #
+
+[![GitHub](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/9e114860-dd75-4645-b018-3855427a8504)](https://github.com/ThatsVie/holbertonschool-printf/blob/main/man_3_printf)
+
+
+
 
 <p align="center">
   <img width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtguQl4ahyEPvsWB4rTkN-1b9yEKpGM4K-7gJLvhaTQ&s">
