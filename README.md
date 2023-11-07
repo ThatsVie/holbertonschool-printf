@@ -8,6 +8,7 @@
 
 ![Static Badge](https://img.shields.io/badge/Cool%20Cats-Cool%20Code-purple?style=string&logoColor=purple) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
 
+<br>
 
 <h3><p align="center">
 Directory for our <a href="https://github.com/ThatsVie/holbertonschool-printf/">Printf Project</a> 💕
