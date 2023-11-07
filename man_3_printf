@@ -73,7 +73,7 @@ This
 man page was written by Jackie Lovins (@Srixx24) and Vie Paula (@ThatsVie)
 .SH NOTES
 .B _printf
-is a custom implementation and may not provide all the features and options of the standard library
+is a custom implementation and does not provide all the features and options of the standard library
 .B printf
 function.
 .SH BUGS

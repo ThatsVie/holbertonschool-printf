@@ -6,12 +6,14 @@
 
 <br>
 
-![Static Badge](https://img.shields.io/badge/Cool%20Cats-Cool%20Code-purple?style=string&logoColor=purple) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
+![Static Badge](https://img.shields.io/badge/Cool%20Cats-Cool%20Code-purple?style=string&logoColor=purple) 
+
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
 
 <br>
 
 <h3><p align="center">
-Directory for our <a href="https://github.com/ThatsVie/holbertonschool-printf/">Printf Project</a> 💕
+Directory of our <a href="https://github.com/ThatsVie/holbertonschool-printf/">Printf Project</a> 💕
 </p></h3>
 
 Our printf fuction works through three distinct code files, each code works in tandum to produce output according to a format. Code files are listed bellow:
@@ -57,8 +59,10 @@ Defines an array specifiers that holds the format specifiers and their correspon
 <li>The code declares function prototypes for various functions used in the implementation of the _printf function and the printing of different types of data</li>
 </details>
 
-#
 <br>
+<br>
+<br>
+
 
 |[Check_out_our_Man_page!](https://github.com/ThatsVie/holbertonschool-printf/blob/main/man_3_printf)|
 |---|
@@ -66,11 +70,15 @@ Defines an array specifiers that holds the format specifiers and their correspon
 <br>
 
 #
-[![Our GitHub stats](https://github-readme-stats.vercel.app/api?username=ThatsVie&theme=tokyonight)](https://github.com/ThatsVie/holbertonschool-printf)
 
 ![carbon](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/2e7c9329-5f82-4a38-851f-72c334918f22)
 
 #
+
+[![GitHub](https://github.com/ThatsVie/holbertonschool-printf/assets/144152489/9e114860-dd75-4645-b018-3855427a8504)](https://github.com/ThatsVie/holbertonschool-printf/blob/main/man_3_printf)
+
+
+
 
 <p align="center">
   <img width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtguQl4ahyEPvsWB4rTkN-1b9yEKpGM4K-7gJLvhaTQ&s">
